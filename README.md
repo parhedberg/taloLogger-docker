@@ -1,5 +1,5 @@
 # taloLogg-Docker
-A dockerized version of taloLogg
+A dockerized version of taloLogg (https://olammi.iki.fi/sw/)
 
 
 *** Setup ***
