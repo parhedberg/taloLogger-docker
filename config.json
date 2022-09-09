@@ -1,6 +1,6 @@
 {
     "name": "taloLogger-docker",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "url": "https://github.com/parhedberg/talologger-docker",
     "panel_icon": "mdi:notebook",
     "slug": "talologger-docker",
@@ -15,6 +15,6 @@
       "serial-port": "/dev/ttyS5"
     },
     "schema": {
-      "serial-port": "match(^\/dev\/ttyS\d{1,2})"
+      "serial-port": "str"
     }
   }
