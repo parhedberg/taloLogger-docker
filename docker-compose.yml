@@ -1,0 +1,14 @@
+version: '3'
+services:
+  talologger:
+      build: .
+      volumes:
+        - ./data:/home/talo/data
+        - "/etc/timezone:/etc/timezone:ro"
+        - "/etc/localtime:/etc/localtime:ro"        
+      ports:
+        - 8080:80
+      environment:
+        - TZ=Europe/Stockholm
+      devices:
+        - ${VARIABLE:-/dev/ttyS5}:${VARIABLE:-/dev/ttyS5}
