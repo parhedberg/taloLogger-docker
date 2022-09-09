@@ -1,0 +1,20 @@
+{
+    "name": "taloLogger-docker",
+    "version": "1.0.0",
+    "url": "https://github.com/parhedberg/talologger-docker",
+    "panel_icon": "mdi:notebook",
+    "slug": "talologger-docker",
+    "description": "Simple container for logging data from varius heatpumps origination from the projekt taloLogger (https://olammi.iki.fi/sw)",
+    "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
+    "startup": "application",
+    "boot": "auto",
+    "ingress": true,
+    "ingress_port": 80,
+    "panel_admin": false,
+    "options": {
+      "serial-port": "/dev/ttyS5"
+    },
+    "schema": {
+      "serial-port": "match(^.+:\\d+$)"
+    }
+  }
