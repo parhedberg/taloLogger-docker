@@ -15,6 +15,6 @@
       "serial-port": "/dev/ttyS5"
     },
     "schema": {
-      "serial-port": "match(^.+:\\d+$)"
+      "serial-port": "match(^\/dev\/ttyS\d{1,2})"
     }
   }
